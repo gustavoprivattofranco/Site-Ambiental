@@ -1,161 +1,126 @@
-/* Estilos gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f9;
     color: #333;
-    line-height: 1.8; /* Aumentado para mais espaçamento entre linhas */
-    font-size: 1.1rem; /* Fonte geral maior (era implícito ~16px, agora ~18px) */
-    text-align: center; /* Centralização geral do body para elementos simples */
 }
 
-header {
-    background-color: #228B22; /* Verde ambiental */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.site-header {
+    background-color: #1e3a5f; 
     color: white;
+    padding: 40px 0;
     text-align: center;
-    padding: 1.5rem; /* Padding aumentado para mais espaço */
-    display: flex; /* Novo: Para centralizar melhor o conteúdo */
-    justify-content: center;
-    align-items: center;
-    min-height: 80px; /* Altura mínima para centralização vertical */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem; /* Fonte do título principal maior */
+.site-header h1 {
+    font-size: 2rem;
 }
 
-nav {
-    background-color: #333;
-    padding: 0;
+.site-nav {
+    background-color: #274c77; 
+    color: white;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.site-nav .container {
     display: flex;
-    justify-content: center; /* Já centralizado, mantido */
-    font-size: 1.1rem; /* Fonte do menu maior */
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
 }
 
-nav ul li {
-    margin: 0 1.5rem; /* Margem aumentada para espaçamento melhor */
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0;
 }
 
-nav ul li a {
+.nav-list li {
+    display: inline-block;
+}
+
+.nav-list a {
     color: white;
     text-decoration: none;
-    padding: 1.2rem; /* Padding maior para itens do menu */
-    display: block;
+    padding: 10px 15px;
+    transition: background 0.3s;
 }
 
-nav ul li a.active,
-nav ul li a:hover {
-    background-color: #228B22;
+.nav-list a:hover,
+.nav-list a.active {
+    background-color: #1e3a5f; 
+    border-radius: 5px;
 }
 
 #menu-toggle {
     display: none;
     background: none;
     border: none;
-    color: white;
     font-size: 1.5rem;
-    cursor: pointer;
-    padding: 1rem;
+    color: white;
+    margin-top: 10px;
 }
 
-/* Responsivo para mobile - Ajustes para fontes não ficarem pequenas */
-@media (max-width: 768px) {
-    body {
-        font-size: 1rem; /* Fonte um pouco menor no mobile, mas ainda legível */
-    }
-    
-    header h1 {
-        font-size: 2rem; /* Título menor no mobile */
-    }
-    
-    nav ul {
-        display: none;
-        flex-direction: column;
-    }
-    
-    nav ul.show {
-        display: flex;
-    }
-    
-    #menu-toggle {
-        display: block;
-    }
-    
-    nav ul li {
-        margin: 0;
-    }
-    
-    nav ul li a {
-        padding: 1rem;
-    }
+.site-main {
+    padding: 40px 0;
 }
 
-main {
-    max-width: 900px; /* Aumentado para caber fontes maiores */
-    margin: 2.5rem auto; /* Margem aumentada para mais centralização e espaço */
-    padding: 0 1rem;
-    background: white;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Sombra um pouco mais suave */
-    border-radius: 10px; /* Bordas mais arredondadas */
-    overflow: hidden;
+.intro h2,
+.intro h3 {
+    color: #1e3a5f;
+    margin-bottom: 10px;
 }
 
-main section {
-    padding: 2.5rem; /* Padding aumentado para mais espaço interno */
-    text-align: left; /* Alinhamento à esquerda para texto (melhor legibilidade), mas centralizado no geral */
+.intro p {
+    margin-bottom: 20px;
 }
 
-main h2 {
-    color: #228B22;
-    border-bottom: 2px solid #228B22;
-    padding-bottom: 0.8rem;
-    font-size: 2rem; /* Fonte dos subtítulos maior */
-    text-align: center; /* Centralizar títulos h2 */
-    margin-bottom: 1.5rem; /* Mais espaço abaixo do título */
+.intro ul {
+    margin: 20px 0;
+    padding-left: 20px;
 }
 
-main p {
-    font-size: 1.2rem; /* Fonte dos parágrafos maior */
-    text-align: justify; /* Justificado para melhor distribuição do texto */
-    margin-bottom: 1.5rem; /* Espaçamento entre parágrafos */
+.intro ul li {
+    margin-bottom: 10px;
 }
 
-main ul {
-    list-style-type: disc;
-    padding-left: 2rem;
-    font-size: 1.1rem; /* Fonte das listas maior */
-}
-
-main a {
-    color: #228B22;
-    text-decoration: none;
-}
-
-main a:hover {
+a {
+    color: #274c77; 
     text-decoration: underline;
 }
 
-footer {
-    text-align: center;
-    padding: 1.5rem; /* Padding aumentado */
-    background-color: #333;
-    color: white;
-    margin-top: 2.5rem; /* Mais espaço acima */
-    font-size: 1rem; /* Fonte do footer maior */
+a:hover {
+    color: #1e3a5f; 
 }
 
-footer a {
-    color: #90EE90;
-}
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        display: none;
+    }
 
-div {
-    text-align: center;
+    .nav-list.show {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
 }
