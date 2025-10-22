@@ -7,26 +7,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Legislação Ambiental, Responsabilidade Social e Cidadania Digital</h1>
+    <header class="site-header">
+        <div class="container">
+            <h1>Legislação Ambiental, Responsabilidade Social e Cidadania Digital</h1>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">Início</a></li>
-            <li><a href="legislacao.html">Legislação Ambiental</a></li>
-            <li><a href="responsabilidade.html">Responsabilidade Social e Cidadania</a></li>
-            <li><a href="sobre.html">Sobre o Projeto</a></li>
-        </ul>
+    <nav class="site-nav">
+        <div class="container">
+            <button id="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="legislacao.html">Legislação Ambiental</a></li>
+                <li><a href="responsabilidade.html">Responsabilidade Social e Cidadania</a></li>
+                <li><a href="sobre.html">Sobre o Projeto</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main>
-        <section class="intro">
+    <main class="site-main">
+        <section class="intro container">
             <h2>O que é Legislação Ambiental?</h2>
             <p>A legislação ambiental refere-se ao conjunto de leis, normas e regulamentos que visam proteger o meio ambiente, promover a sustentabilidade e equilibrar o desenvolvimento humano com a preservação dos recursos naturais. No Brasil, ela é fundamental para garantir que atividades econômicas não degradem o planeta de forma irreversível.</p>
             
+            <p>No contexto brasileiro, a legislação ambiental ganhou força com a Constituição Federal de 1988, que no Artigo 225 estabelece o direito ao meio ambiente ecologicamente equilibrado como um bem de uso comum e impõe ao poder público e à coletividade o dever de defendê-lo. Antes disso, leis pioneiras como a Política Nacional do Meio Ambiente (Lei nº 6.938/1981) criaram o Sistema Nacional do Meio Ambiente (SISNAMA), coordenado pelo IBAMA.</p>
+            
+            <p>Seus principais princípios incluem a prevenção de danos (evitar problemas antes que ocorram), o poluidor-pagador (quem causa dano paga pela reparação) e a participação social (cidadãos podem influenciar decisões via audiências públicas). Internacionalmente, o Brasil se inspira em acordos como o Protocolo de Kyoto e os Objetivos de Desenvolvimento Sustentável (ODS) da ONU, que enfatizam a cooperação global contra mudanças climáticas.</p>
+            
+            <ul>
+                <li><strong>Objetivos chave:</strong> Preservar a biodiversidade, controlar a poluição e fomentar o uso racional de recursos como água e solos.</li>
+                <li><strong>Desafios:</strong> Fiscalização limitada em áreas remotas, como a Amazônia, onde o desmatamento ilegal persiste apesar das leis.</li>
+            </ul>
+            
             <h2>Importância para o Desenvolvimento Socioeconômico</h2>
-            <p>A legislação ambiental influencia diretamente o desenvolvimento econômico e social do país ao incentivar práticas sustentáveis. Por exemplo, leis que regulam o licenciamento ambiental evitam desastres como o rompimento de barragens, preservando empregos e comunidades. Além disso, promove a inovação em energias renováveis, gerando novas oportunidades econômicas e fortalecendo a cidadania ao envolver a sociedade na proteção ambiental. Sem ela, o crescimento seria insustentável, levando a crises como escassez de água e perda de biodiversidade.</p>
+            <p>A legislação ambiental influencia diretamente o desenvolvimento econômico e social do país ao incentivar práticas sustentáveis. Por exemplo, leis que regulam o licenciamento ambiental evitam desastres como o rompimento de barragens em Mariana (2015) e Brumadinho (2019), preservando empregos e comunidades inteiras. De acordo com o IBAMA, multas ambientais em 2022 ultrapassaram R$ 2 bilhões, que são reinvestidos em recuperação de áreas degradadas.</p>
+            
+            <p>Economicamente, a sustentabilidade impulsiona setores inovadores: o Brasil é líder em energias renováveis, com mais de 80% da matriz energética de fontes limpas (hidrelétrica, solar e eólica), gerando cerca de 1,5 milhão de empregos verdes até 2023, segundo a ONU Meio Ambiente. Na agricultura, normas como o Código Florestal (Lei nº 12.651/2012) promovem o plantio sustentável, evitando erosão do solo e aumentando a produtividade em 20-30% em fazendas certificadas.</p>
+            
+            <p>Socialmente, essas leis combatem desigualdades: regiões como o Norte e Nordeste, mais vulneráveis a secas e inundações, beneficiam-se de políticas que protegem recursos hídricos, melhorando a saúde pública e reduzindo custos com tratamentos de doenças causadas pela poluição (estimados em R$ 10 bilhões anuais pelo Ministério da Saúde). Sem legislação ambiental, o crescimento seria insustentável, levando a crises como escassez de água (afetando 35 milhões de brasileiros, per PNUD) e perda de biodiversidade, que ameaça o ecoturismo – um setor que movimenta R$ 30 bilhões por ano.</p>
+            
+            <p>Em resumo, a legislação não é um obstáculo, mas um motor para um PIB verde: projeções da CEPAL indicam que a economia sustentável pode adicionar 2-3% ao crescimento anual do Brasil até 2030, criando oportunidades para jovens em tecnologias verdes e fortalecendo a resiliência social.</p>
+            
+            <h2>Relação com Responsabilidade Social e Cidadania Digital</h2>
+            <p>A legislação ambiental se entrelaça com a responsabilidade social das empresas e cidadãos, promovendo ações éticas que vão além da obrigatoriedade legal. Empresas como a Petrobras adotam relatórios de sustentabilidade para reduzir emissões, enquanto cidadãos participam de programas como o "Mutirão Reflorestamento" do WWF. Essa responsabilidade fomenta uma cidadania ativa, onde pequenas atitudes – como reciclagem ou denúncias de crimes ambientais – contribuem para uma sociedade mais justa.</p>
+            
+            <p>No âmbito digital, a cidadania ganha ferramentas modernas: aplicativos como o "Fiscaliza" do IBAMA permitem denúncias online de desmatamento em tempo real, e redes sociais amplificam campanhas como #FridaysForFuture. A tecnologia facilita o acesso à informação, permitindo que qualquer pessoa monitore o cumprimento de leis ambientais via portais abertos do governo. Para aprofundar, explore as páginas sobre <a href="legislacao.html">Legislação Ambiental</a> e <a href="responsabilidade.html">Responsabilidade Social</a>.</p>
+            
+            <ul>
+                <li><strong>Exemplos práticos:</strong> Campanhas digitais da Greenpeace que mobilizaram 1 milhão de assinaturas contra o desmatamento em 2022.</li>
+                <li><strong>Reflexão:</strong> Como estudantes, podemos usar a cidadania digital para educar amigos sobre leis ambientais, transformando conhecimento em ação coletiva.</li>
+            </ul>
         </section>
     </main>
 
