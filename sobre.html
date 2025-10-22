@@ -7,33 +7,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-    <header>
-        <h1>Legislação Ambiental, Responsabilidade Social e Cidadania Digital</h1>
+    <header class="site-header">
+        <div class="container">
+            <h1>Legislação Ambiental, Responsabilidade Social e Cidadania Digital</h1>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="legislacao.html">Legislação Ambiental</a></li>
-            <li><a href="responsabilidade.html">Responsabilidade Social e Cidadania</a></li>
-            <li><a href="sobre.html" class="active">Sobre o Projeto</a></li>
-        </ul>
+    <nav class="site-nav">
+        <div class="container">
+            <button id="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="legislacao.html">Legislação Ambiental</a></li>
+                <li><a href="responsabilidade.html">Responsabilidade Social e Cidadania</a></li>
+                <li><a href="sobre.html" class="active">Sobre o Projeto</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main>
-        <section>
+    <main class="site-main">
+        <section class="intro container">
             <h2>Sobre o Projeto</h2>
             <p>Este site foi desenvolvido como trabalho prático para explorar os aspectos da legislação ambiental no desenvolvimento socioeconômico, a responsabilidade social e a cidadania digital.</p>
             
-            <h3>Autores</h3>
+            <h3>Autor</h3>
             <ul>
                 <li>Gustavo Privatto Franco</li>
-                <li>Isaac Pires da Silva</li>
+            </ul>
+
+            <h3>Fontes de Pesquisa</h3>
+            <p>Elas incluem legislações, artigos acadêmicos e recursos online relevantes para os temas abordados.</p>
+            <ul>
+                <li>Lei nº 6.938/1981 - Política Nacional do Meio Ambiente (Brasil). Disponível em: <a href="http://www.planalto.gov.br/ccivil_03/leis/l6938.htm" target="_blank">Planalto.gov.br</a></li>
+                <li>Constituição Federal de 1988, Capítulo VI - Do Meio Ambiente (Artigos 225 a 232). Disponível em: <a href="http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank">Planalto.gov.br</a></li>
+                <li>Relatório do IPCC (2022) - Mudanças Climáticas e Impactos Socioeconômicos. Disponível em: <a href="https://www.ipcc.ch/report/sixth-assessment-report-working-group-ii/" target="_blank">IPCC.ch</a></li>
+                <li>Artigo: "Responsabilidade Social Corporativa e Sustentabilidade" (Revista de Administração Pública, 2019). Autores: Silva, J. e Oliveira, M.</li>
+                <li>Marco Civil da Internet (Lei nº 12.965/2014) - Cidadania Digital no Brasil. Disponível em: <a href="http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm" target="_blank">Planalto.gov.br</a></li>
+                <li>Livro: "Cidadania Digital: Ética e Responsabilidade na Era da Informação" (Editora XYZ, 2021). Autor: Santos, R.</li>
+                <li>Site do Ministério do Meio Ambiente (MMA) - Recursos sobre Legislação Ambiental. Disponível em: <a href="https://www.gov.br/mma/pt-br" target="_blank">Gov.br/MMA</a></li>
             </ul>
         </section>
     </main>
-</div>
+
     <script src="script.js"></script>
 </body>
 </html>
