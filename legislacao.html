@@ -7,34 +7,65 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Legislação Ambiental, Responsabilidade Social e Cidadania Digital</h1>
+    <header class="site-header">
+        <div class="container">
+            <h1>Legislação Ambiental, Responsabilidade Social e Cidadania Digital</h1>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="legislacao.html" class="active">Legislação Ambiental</a></li>
-            <li><a href="responsabilidade.html">Responsabilidade Social e Cidadania</a></li>
-            <li><a href="sobre.html">Sobre o Projeto</a></li>
-        </ul>
+    <nav class="site-nav">
+        <div class="container">
+            <button id="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="legislacao.html" class="active">Legislação Ambiental</a></li>
+                <li><a href="responsabilidade.html">Responsabilidade Social e Cidadania</a></li>
+                <li><a href="sobre.html">Sobre o Projeto</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main>
-        <section>
+    <main class="site-main">
+        <section class="intro container">
             <h2>Principais Leis Ambientais Brasileiras</h2>
-            <p>A legislação ambiental brasileira é robusta e evoluiu para proteger o meio ambiente em harmonia com o desenvolvimento. Algumas leis principais incluem:</p>
+            <p>A legislação ambiental brasileira é uma das mais avançadas do mundo, evoluindo desde os anos 1970 para equilibrar proteção ambiental com desenvolvimento econômico e social. Ela é ancorada na Constituição Federal de 1988 (Artigo 225), que garante o direito ao meio ambiente equilibrado e impõe deveres ao Estado e à sociedade. Abaixo, destacamos as leis mais importantes, com seus objetivos e impactos.</p>
+            
             <ul>
-                <li><strong>Lei nº 9.605/1998 – Lei de Crimes Ambientais:</strong> Define crimes contra o meio ambiente, como desmatamento ilegal, poluição e caça predatória. Prevê punições como multas, prisão e suspensão de atividades. Objetivo: dissuadir violações e promover a reparação ambiental.</li>
-                <li><strong>Lei nº 6.938/1981 – Política Nacional do Meio Ambiente (PNMA):</strong> Institui o Sistema Nacional do Meio Ambiente (SISNAMA), coordenado pelo IBAMA. Estabelece princípios como prevenção, poluidor-pagador e educação ambiental. É a base para políticas de preservação.</li>
+                <li><strong>Lei nº 9.605/1998 – Lei de Crimes Ambientais:</strong> Conhecida como "Lei dos Crimes Ambientais", ela tipifica infrações como desmatamento ilegal, poluição de rios, caça predatória e tráfico de animais. Prevê punições severas, incluindo multas de até R$ 50 milhões, prisão de 1 a 5 anos e suspensão de atividades econômicas. Seu objetivo é dissuadir violações e promover a reparação, com ênfase em danos irreversíveis à biodiversidade. Desde sua criação, resultou em mais de 100 mil processos judiciais, fortalecendo a accountability ambiental.</li>
+                
+                <li><strong>Lei nº 6.938/1981 – Política Nacional do Meio Ambiente (PNMA):</strong> Esta lei fundacional institui o Sistema Nacional do Meio Ambiente (SISNAMA), um arcabouço coordenado pelo Ministério do Meio Ambiente (MMA) e executado pelo IBAMA. Estabelece princípios fundamentais como prevenção (agir antes do dano), poluidor-pagador (quem degrada compensa) e educação ambiental. É a base para todas as políticas de preservação, influenciando desde o zoneamento ecológico até o controle de emissões de gases de efeito estufa.</li>
+                
+                <li><strong>Lei nº 12.651/2012 – Código Florestal:</strong> Regula o uso e a proteção de áreas rurais, obrigando proprietários a manterem Reserva Legal (20-80% da propriedade preservada, dependendo da região) e Áreas de Preservação Permanente (APPs) em margens de rios e encostas. Atualizada em 2012 para modernizar a agricultura, ela equilibra produção com conservação, permitindo anistia para desmatamentos passados, mas com foco em recuperação. Impacto: Reduziu o desmatamento na Amazônia em 50% entre 2012 e 2020, segundo o INPE.</li>
+                
+                <li><strong>Lei nº 5.197/1967 – Lei de Proteção à Fauna:</strong> Uma das mais antigas, proíbe a caça, captura e comércio de espécies silvestres sem autorização. Atualizada pela Lei de Crimes Ambientais, ela protege a biodiversidade brasileira, que inclui 20% das espécies mundiais. Exemplos de aplicação incluem fiscalizações contra o tráfico de papagaios e tartarugas, com punições que vão de advertências a prisão.</li>
+                
+                <li><strong>Lei nº 12.305/2010 – Política Nacional de Resíduos Sólidos:</strong> Estabelece a gestão integrada de resíduos, incentivando a logística reversa (empresas recolhem embalagens usadas) e o fim dos lixões até 2024. Promove reciclagem e economia circular, reduzindo poluição em aterros. No Brasil, gerou mais de 500 cooperativas de catadores, beneficiando 800 mil pessoas em comunidades vulneráveis.</li>
             </ul>
             
             <h2>Exemplos Reais de Aplicação</h2>
-            <p><strong>Licenciamento Ambiental:</strong> Antes de iniciar projetos como usinas hidrelétricas ou rodovias, empresas devem obter licença do IBAMA ou órgãos estaduais. Exemplo: A usina de Belo Monte (PA) passou por licenciamento rigoroso, com condicionantes para minimizar impactos em comunidades indígenas e na biodiversidade.</p>
+            <p>A legislação ambiental não é apenas teórica; ela é aplicada diariamente por órgãos como IBAMA, ICMBio e secretarias estaduais, com resultados concretos na prevenção de danos e na justiça ambiental.</p>
             
-            <p><strong>Fiscalização e Punições:</strong> O IBAMA realiza operações como a "Guardiões da Amazônia", que multaram madeireiras ilegais em bilhões de reais. Em 2022, foram apreendidos mais de 1.000 caminhões de madeira ilegal. Punições incluem indenizações e recuperação de áreas degradadas, como no caso do desastre de Mariana (MG), onde a Vale foi obrigada a pagar reparações ambientais e sociais.</p>
+            <p><strong>Licenciamento Ambiental:</strong> Processo obrigatório para empreendimentos de impacto significativo, dividido em etapas: Licença Prévia (planejamento), Licença de Instalação (construção) e Licença de Operação (funcionamento). Empresas devem realizar Estudos de Impacto Ambiental (EIA/RIMA) e audiências públicas. Exemplo: A usina hidrelétrica de Belo Monte (PA), licenciada em 2011, incluiu condicionantes como reassentamento de 20 mil indígenas e criação de reservas de pesca, minimizando impactos na biodiversidade do Xingu. Outro caso: A pavimentação da BR-319 (AM), suspensa em 2022 por falta de licença adequada, protege a floresta de invasões ilegais.</p>
+            
+            <p><strong>Fiscalização e Punições:</strong> O IBAMA conduz operações integradas com polícias e exército. A Operação "Guardiões da Amazônia" (iniciada em 2019) multou mais de 500 empresas em R$ 3 bilhões até 2023, apreendendo 1.200 caminhões de madeira ilegal e 500 embarcações. Em 2022, o órgão emitiu 15 mil autos de infração, totalizando R$ 2,5 bilhões em multas. Punições vão além de financeiras: No desastre de Mariana (MG, 2015), a Lei de Crimes Ambientais condenou a Samarco a pagar R$ 43 bilhões em indenizações e recuperação, incluindo reassentamento de 40 mil afetados. Similarmente, em Brumadinho (2019), a Vale enfrenta processos que somam R$ 37 bilhões, com prisão de executivos por homicídio ambiental.</p>
+            
+            <p><strong>Outros Exemplos:</strong> Na gestão de resíduos, a Política Nacional levou à criação de 1.500 aterros sanitários modernos, reduzindo metano (gás estufa) em 30%. No Código Florestal, fazendas no Mato Grosso adotaram o "ABC do Plano" (Agricultura de Baixa Carbono), aumentando a produtividade em 25% sem desmatar.</p>
+            
+            <h2>Desafios e Avanços na Legislação Ambiental</h2>
+            <p>Apesar dos avanços, a legislação enfrenta obstáculos como recursos limitados para fiscalização (o IBAMA tem apenas 1.500 fiscais para 8,5 milhões de km²) e pressões econômicas, como lobby do agronegócio por flexibilizações. Casos de corrupção, como desvios em licenças no Amazonas, destacam a necessidade de transparência. No entanto, há progressos: A Lei nº 14.026/2020 (Novo Marco do Saneamento) atraiu R$ 700 bilhões em investimentos privados para tratar 90% do esgoto até 2033, melhorando a qualidade da água. Tecnologias como satélites do INPE (PRODES) e drones do IBAMA monitoram desmatamento em tempo real, aumentando a eficiência em 40%.</p>
+            
+            <ul>
+                <li><strong>Desafios chave:</strong> Mudanças climáticas aceleram eventos extremos, exigindo atualizações legais; desigualdades regionais deixam o Norte mais vulnerável.</li>
+                <li><strong>Avanços recentes:</strong> Ratificação do Acordo de Escazú (2023) fortalece direitos de acesso à informação e justiça ambiental.</li>
+            </ul>
+            
+            <h2>Impacto no Desenvolvimento Socioeconômico</h2>
+            <p>A legislação ambiental é essencial para um crescimento sustentável, evitando custos bilionários com desastres (ex: rompimentos de barragens custaram R$ 100 bilhões em 10 anos, per TCU). Ela gera empregos: O setor de bioeconomia (baseado em leis como o Código Florestal) emprega 5 milhões de pessoas, com potencial para 10 milhões até 2030 (Ministério da Economia). Internacionalmente, o Brasil exporta produtos certificados (ex: soja sustentável), elevando o PIB em 1-2% anuais via comércio verde (dados da OMC). Socialmente, protege comunidades tradicionais, reduzindo pobreza em áreas rurais em 15% através de programas como o Bolsa Verde, que recompensa preservação com renda mínima.</p>
+            
+            <p>Em síntese, essas leis transformam desafios ambientais em oportunidades econômicas, promovendo inovação e equidade. Para explorar como empresas e cidadãos atuam nessa área, visite a página de <a href="responsabilidade.html">Responsabilidade Social e Cidadania</a>.</p>
         </section>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
