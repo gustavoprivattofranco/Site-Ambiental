@@ -7,32 +7,71 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Legislação Ambiental, Responsabilidade Social e Cidadania Digital</h1>
+    <header class="site-header">
+        <div class="container">
+            <h1>Legislação Ambiental, Responsabilidade Social e Cidadania Digital</h1>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="legislacao.html">Legislação Ambiental</a></li>
-            <li><a href="responsabilidade.html" class="active">Responsabilidade Social e Cidadania</a></li>
-            <li><a href="sobre.html">Sobre o Projeto</a></li>
-        </ul>
+    <nav class="site-nav">
+        <div class="container">
+            <button id="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="legislacao.html">Legislação Ambiental</a></li>
+                <li><a href="responsabilidade.html" class="active">Responsabilidade Social e Cidadania</a></li>
+                <li><a href="sobre.html">Sobre o Projeto</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main>
-        <section>
+    <main class="site-main">
+        <section class="intro container">
             <h2>O que é Responsabilidade Social?</h2>
-            <p>Responsabilidade social é o compromisso de empresas, instituições e indivíduos em adotar práticas éticas que beneficiem a sociedade e o meio ambiente, além de maximizar lucros. Ela integra dimensões econômicas, sociais e ambientais, promovendo a sustentabilidade e a equidade. No contexto ambiental, envolve ações como redução de emissões de carbono e apoio a comunidades afetadas por projetos.</p>
+            <p>A responsabilidade social (ou Responsabilidade Social Corporativa - RSC, quando aplicada a empresas) é o compromisso voluntário de indivíduos, organizações e governos em adotar práticas éticas e sustentáveis que vão além da mera conformidade legal, visando beneficiar a sociedade, o meio ambiente e a economia. Ela integra três pilares fundamentais: econômico (geração de valor compartilhado), social (promoção de direitos humanos e equidade) e ambiental (preservação de recursos naturais). No contexto brasileiro, essa responsabilidade se alinha à legislação ambiental, como a Política Nacional do Meio Ambiente (PNMA), e é incentivada por normas internacionais como a ISO 26000, que orienta práticas sustentáveis.</p>
+            
+            
+            <p>Globalmente, a ONU reforça isso através dos Objetivos de Desenvolvimento Sustentável (ODS), especialmente o ODS 12 (Consumo e Produção Responsáveis) e ODS 13 (Ação contra a Mudança Global do Clima). No Brasil, empresas listadas na B3 (Bolsa de Valores) são obrigadas a divulgar relatórios de sustentabilidade desde 2022, integrando RSC à governança corporativa. Essa abordagem não é apenas altruísta: estudos da FGV mostram que empresas com fortes práticas de RSC têm 20% mais retenção de talentos e maior atratividade para investidores ESG (Ambiental, Social e Governança).</p>
+            
+            <ul>
+                <li><strong>Pilares chave:</strong> Ambiental (redução de pegada de carbono), Social (inclusão de minorias e comunidades) e Econômico (inovação para lucros sustentáveis).</li>
+                <li><strong>Importância no Brasil:</strong> Com desigualdades acentuadas (Gini de 0,53, per IBGE), a RSC ajuda a mitigar impactos de atividades econômicas em populações vulneráveis, como quilombolas afetados por mineração.</li>
+            </ul>
             
             <h2>Ações Práticas de Empresas e Cidadãos</h2>
+            <p>A responsabilidade social se materializa em ações concretas que promovem mudanças reais. Empresas e cidadãos atuam em parceria, frequentemente apoiados por leis ambientais que exigem compensações por impactos negativos.</p>
+            
+            <p><strong>Empresas:</strong> A Natura exemplifica com seu programa "Amazonia Viva", que usa biotecnologia da biodiversidade amazônica para cosméticos, gerando renda para 8 mil famílias indígenas e evitando desmatamento de 1 milhão de hectares desde 2010. A Suzano, maior produtora de celulose do mundo, planta 3 milhões de árvores por ano via seu "Programa de Reflorestamento", compensando emissões e criando 30 mil empregos diretos em comunidades rurais. Pós-desastres, a Vale (após Brumadinho) investiu R$ 10 bilhões em reparação social, incluindo educação e saúde para 200 mil afetados, alinhado à Lei de Crimes Ambientais. A Petrobras, por sua vez, reduziu emissões de CO2 em 25% até 2023 através de projetos de energia renovável, como parques eólicos offshore, gerando R$ 5 bilhões em investimentos sociais.</p>
+            
+            <p><strong>Cidadãos:</strong> Indivíduos podem contribuir com ações cotidianas e coletivas. Reciclagem seletiva, por exemplo, evita 1 tonelada de CO2 por pessoa/ano (dados da WWF), enquanto o uso de transporte público ou bicicleta reduz poluição urbana em até 40% nas cidades (IPEA). Participe de mutirões como o "Dia Mundial da Limpeza" do Oceanos Sem Plástico, que mobilizou 500 mil voluntários no Brasil em 2022. Aplicativos como "EcoCidadão" (do MMA) e "Denúncia Ambiental" (IBAMA) permitem relatar irregularidades em tempo real, com geolocalização, facilitando fiscalizações. Outra ação: Adote o consumo consciente, preferindo produtos com selo FSC (madeira sustentável), que apoia 1 milhão de empregos florestais no país.</p>
+            
             <ul>
-                <li><strong>Empresas:</strong> A Natura, por exemplo, adota embalagens recicláveis e investe em biotecnologia da Amazônia, gerando renda para comunidades indígenas. Outra ação é o programa de reflorestamento da Suzano, que planta milhões de árvores para compensar o uso de celulose.</li>
-                <li><strong>Cidadãos:</strong> Ações simples incluem reciclagem, uso de transporte público para reduzir poluição e participação em mutirões de limpeza, como os promovidos pelo WWF Brasil. Aplicativos como o "EcoCidadão" ajudam a monitorar e denunciar irregularidades ambientais.</li>
+                <li><strong>Dicas práticas para cidadãos:</strong> Instale apps de monitoramento de energia (ex: Google Nest) para economizar 10-20% em contas; junte-se a ONGs como Greenpeace para petições online.</li>
+                <li><strong>Impacto coletivo:</strong> Iniciativas como o "Pacto Global" da ONU envolvem 10 mil empresas brasileiras, reduzindo desigualdades e fomentando inovação verde.</li>
+            </ul>
+            
+            <h2>Cidadania Digital e Tecnologia na Responsabilidade Social</h2>
+            <p>A cidadania digital transforma a responsabilidade social ao democratizar o acesso à informação e à ação, usando ferramentas online para engajar a sociedade na proteção ambiental. No Brasil, portais como o "e-Cidadania" do Senado permitem sugestões de leis sustentáveis, enquanto plataformas como o "Mapa Interativo de Desmatamento" do INPE oferecem dados em tempo real para ativistas.</p>
+            
+            <p>Redes sociais amplificam vozes: A campanha #FridaysForFuture, inspirada por Greta Thunberg, mobilizou 2 milhões de jovens brasileiros em 2019 para pressionar por políticas climáticas. Apps como "Forest" gamificam o plantio de árvores virtuais que viram reais via parcerias com ONGs, plantando 10 milhões globalmente. A IA e big data ajudam empresas: A IBM usa algoritmos para otimizar cadeias de suprimentos sustentáveis, reduzindo desperdícios em 30%. Cidadãos podem usar o WhatsApp para grupos de vizinhança em reciclagem ou o TikTok para educar sobre RSC, alcançando 100 milhões de usuários jovens no Brasil (dados da ABStartups).</p>
+            
+            <ul>
+                <li><strong>Exemplos digitais:</strong> O "Relatórios de Sustentabilidade" da CVM (Comissão de Valores Mobiliários) são acessíveis online, permitindo que cidadãos fiscalizem empresas.</li>
+                <li><strong>Benefícios:</strong> Aumenta transparência e inclusão, especialmente para comunidades remotas sem acesso físico a órgãos públicos.</li>
+            </ul>
+            
+            <h2>Impactos Socioeconômicos e Desafios</h2>
+            <p>A responsabilidade social impulsiona o desenvolvimento ao criar valor compartilhado: No Brasil, investimentos em RSC geraram 2,5 milhões de empregos em setores verdes até 2023 (Ministério do Trabalho), elevando o PIB em 1,5% via inovação (FGV). Socialmente, reduz desigualdades – programas como o "Mulheres do Campo" da Embrapa empoderam 500 mil agricultoras com práticas sustentáveis, diminuindo a pobreza rural em 12% (IBGE). Economicamente, evita custos: Empresas com RSC baixa enfrentam multas 3x maiores (IBAMA), enquanto as responsáveis atraem R$ 100 bilhões em investimentos ESG anuais (BM&FBovespa).</p>
+            
+            <p>Desafios incluem o "greenwashing" (propaganda falsa de sustentabilidade, como visto em casos da Anvisa contra cosméticos), falta de fiscalização em PMEs e barreiras digitais para idosos ou áreas sem internet (afetando 30% da população rural, per PNAD). Soluções: Educação via escolas e campanhas digitais, além de leis como o Marco Civil da Internet, que protegem dados em ações cívicas.</p>
+            
+            <ul>
+                <li><strong>Impactos positivos:</strong> Redução de emissões em 15% nas empresas certificadas ISO 14001; maior equidade em comunidades afetadas por projetos ambientais.</li>
+                <li><strong>Desafios chave:</strong> Medir impacto real da RSC e combater desinformação nas redes.</li>
             </ul>
             
             <h2>Reflexão Pessoal</h2>
-            <p>Como indivíduo, acredito que pequenas atitudes, como economizar água e energia ou optar por produtos sustentáveis, são fundamentais para uma sociedade mais justa e sustentável. Elas não só cumprem a legislação ambiental, mas fortalecem a cidadania digital ao compartilhar conscientização nas redes sociais. No final, cada gesto contribui para um futuro onde o desenvolvimento socioeconômico respeita o planeta, evitando desigualdades ambientais que afetam os mais vulneráveis.</p>
+            <p>Como indivíduo e futuro profissional, vejo a responsabilidade social não como uma obrigação, mas como uma oportunidade para construir um mundo mais ético e resiliente. Pequenas atitudes, como economizar água (reduzindo consumo em 50 litros/dia) ou compartilhar conteúdos educativos no Instagram sobre leis ambientais, cumprem a legislação e fortalecem a cidadania digital. Elas combatem desigualdades, como as que afetam favelas expostas a poluição industrial, e promovem um desenvolvimento socioeconômico inclusivo. No final, cada gesto – de uma empresa inovando ou um cidadão denunciando – contribui para um planeta sustentável, onde a tecnologia une gerações na defesa comum do meio ambiente. Para mais sobre leis que embasam essas ações, confira a página de <a href="legislacao.html">Legislação Ambiental</a>.</p>
         </section>
     </main>
 
